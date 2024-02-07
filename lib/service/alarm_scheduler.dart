@@ -11,7 +11,7 @@ class AlarmScheduler {
         final time = alarm.timeOfDay.toComingDateTimeAt(weekday);
 
         await _oneShot(callbackId, time);
-        debugPrint('Alarm scheduled at $time');
+        debugPrint('Alarm scheduled at callbackId : $callbackId ----- time : $time');
       }
     }
   }
